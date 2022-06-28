@@ -13,12 +13,31 @@ https://github.com/Mellow-3D/Klipper-CAN-Toolboards
 ### Klipper CANBUS Documentation     
 https://www.klipper3d.org/CANBUS.html      
 
-### This guide assumes you alreay have a working Klipper installation on a Rasberry Pi, other small board computer or linux based system. 
+**This guide assumes you alreay have a working Klipper installation**
 
-## Setup Steps***
+## Setup Steps
 
 ### Compile Toolboard Firmware
+- ssh to your pi console
+- CD to the klipper directory
+```
+cd klipper
+```
+- Run MAKE Clean
+```
+make clean
+```
+- open menuconfig
+```
+make menuconfig
+```
+- Set the following options      
 ![Menu Config](./images/makemenuconfig_screenshot.png)
+
+- compile the firmware
+```
+make
+```
 
 ### Burn Firmware to Tool Board
 

@@ -134,3 +134,6 @@ https://www.klipper3d.org/CANBUS.html
 ### Waveshare RS485 CANHAT
 https://www.waveshare.com/wiki/RS485_CAN_HAT
 
+### Kevin O'Conner Experemental USB to CANBUS bride mode discussion. _ Recently merged into the main Klipper branch. Allows using compatible MCUs like the Octopus as your CANBUS node for the Klipper host. No USB CAN Interface or Pi HAT needed. 
+https://klipper.discourse.group/t/experimental-usb-to-canbus-bridge-mode/3136
+

@@ -23,7 +23,7 @@ make menuconfig
 - Set the following options for CANBUS connection     
 ![Menu Config CANBUS](./images/makemenuconfig_screenshot.png)
 
-- Set the following for USB COnnection
+- Set the following for USB Connection
 ![Menu Config USB](./images/makemenuconfig_screenshot_USB.png)
 - compile the firmware
 ```

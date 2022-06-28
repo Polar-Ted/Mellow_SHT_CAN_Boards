@@ -22,3 +22,4 @@ Compile Toolboard Firmware
 Burn Firmware to Tool Board
 
 Pi configuration
+[Menu Config](./images/makemenuconfig_screenshot.png)

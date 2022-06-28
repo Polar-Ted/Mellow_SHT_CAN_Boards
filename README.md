@@ -63,17 +63,19 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 ### Klipper Host configuration
 
 - Klipper Host configuration
-- Creating a new file named /etc/network/interfaces.d/can0 with the following contents. A copy of this file is posted here in this repository
+- Create a new file named /etc/network/interfaces.d/can0 with the following contents or read below to download a copy. 
 ```
 auto can0
 iface can0 can static
     bitrate 250000
     up ifconfig $IFACE txqueuelen 1024
 ```
- A copy of this file can be downlaoded [here](./can0). FRP this file to your Klipper host /home/pi directory and run this line from the ssh console to move it to the correct directory.
+ A copy of this file can be downlaoded [here](./can0). SFTP this file to your Klipper host /home/pi directory and run this line from the ssh console to move it to the correct directory.
 ```
 sudo cp /home/pi/can0 /etc/network/interfaces.d/
 ```
+ -Waveshare RP485 CAN Hats will need further configuration - More on this section soon.       
+    [Waveshare instructions](https://www.waveshare.com/wiki/RS485_CAN_HAT)      
 
 -CANBUS configuration
  -Finding the canbus_uuid for new micro-controllers¶

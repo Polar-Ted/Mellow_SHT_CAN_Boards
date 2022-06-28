@@ -1,4 +1,4 @@
-This guild is intended to help you set up and configure the Mellow SHT-36 and SHT-42 CANbus tool boards.
+This guide is intended to help you set up and configure the Mellow SHT-36 and SHT-42 CANbus tool boards.
 
 ***Relevent links***      
 Mellow tool board documentation      
@@ -14,6 +14,8 @@ Klipper CANBUS Documentation
 https://www.klipper3d.org/CANBUS.html      
 
 This guide assumes you alreay have a working Klipper installation on a Rasberry Pi, other small board computer or linux based system. 
+
+***Setup Steps***
 
 Compile Toolboard Firmware
 

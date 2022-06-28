@@ -68,7 +68,8 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
   Each micro-controller on the CAN bus is assigned a unique id based on the factory chip identifier encoded into each micro-controller. To find each micro-controller     device id, make sure the hardware is powered and wired correctly, and then run:
 
 
-```~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
   If uninitialized CAN devices are detected the above command will report lines like the following:
 
@@ -83,11 +84,21 @@ Found canbus_uuid=11aa22bb33cc
  -Configuring Klipper¶
   Update the Klipper mcu configuration to use the CAN bus to communicate with the device - for example:
 
+Add the following lines to your printer.cfg file using your canbus_uuid
 ```
 [mcu sht36]
 canbus_uuid: 11aa22bb33cc
 ```
+ -more needed here for configuring Can bus network settings. 
 
+-USB Configuration
+(add lines for finding the lath)
+
+Add the following lines to your printer.cfg file
+```
+[mcu sht36]
+serial: /dev/serial/by-id/usb-Klipper_stm32f072xb_240024001757425835303220-if00
+```
 
 ## Relevent links      
 ### Mellow tool board documentation      

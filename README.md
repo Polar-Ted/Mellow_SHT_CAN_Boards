@@ -52,7 +52,7 @@ lsusb
 dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
 
--You should get a download progress bar and a success when the burning is complete. 
+-You should get a download progress bar and File downloaded successfuly when the burning is complete. 
 ![burn complete](https://mellow.klipper.cn/images/boards/fly_sht36_42/7.png)
 
 - If the burn was sucessful remove the USB cable and the jumper from the Boot0 pin

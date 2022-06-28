@@ -39,7 +39,7 @@ make
 sudo apt install dfu-util -y
 ```
 - Use USB-C data cable to connect the SHT board to the klipper host, Make sure that the jumper is installed before connecting the USB cable.      
-- Run LSUSB to see if the connection is successful, copy the USB ID in the blue box
+- Run LSUSB to see if the connection is successful, copy the USB ID in the blue box. Note that the board is in DFU mode. 
 ```
 lsusb
 ```

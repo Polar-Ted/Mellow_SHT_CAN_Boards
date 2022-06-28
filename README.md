@@ -27,9 +27,32 @@ make menuconfig
 ```
 make
 ```
+- You should now have a klipper.bin file at ~/klipper/out/
 
 ### Burn Firmware to Tool Board
 
+![SHT burn jumper placement](https://mellow.klipper.cn/images/boards/fly_sht36_42/usbflash.png)
+
+- Install the burning utility to your klipper host system
+```
+sudo apt install dfu-util -y
+```
+- Use USB-C data cable to connect the SHT board to the klipper host, Make sure that the jumper is installed before connecting the USB cable.      
+- Run LSUSB to see if the connection is successful, copy the USB ID in the blue box
+```
+lsusb
+```
+![USUSB Results](https://mellow.klipper.cn/images/boards/fly_sht36_42/6.png)
+
+- Burn the firmware , replace 0483:df11 in the following command with the USB ID copied earlier
+```
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
+```
+
+-You should get a download progress bar and a success when the burning is complete. 
+![burn complete](https://mellow.klipper.cn/images/boards/fly_sht36_42/7.png)
+
+- If the burn was sufccessful remove the USB cable and the jumper from  
 ### Pi configuration
 
 ## Relevent links      

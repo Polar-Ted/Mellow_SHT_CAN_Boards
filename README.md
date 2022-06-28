@@ -127,3 +127,6 @@ https://github.com/Mellow-3D/Klipper-CAN-Toolboards
 ### Klipper CANBUS Documentation     
 https://www.klipper3d.org/CANBUS.html      
 
+### Waveshare RS485 CANHAT
+https://www.waveshare.com/wiki/RS485_CAN_HAT
+

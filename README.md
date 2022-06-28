@@ -59,9 +59,21 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 - The tool board is now ready to install as a klipper MCU. 
 **Repeat these steps if a klipper update requires flashing new firmware to the MCU. 
 
-### Link to CANBUS HAT or USB adapter configuration document will go here
 
 ### Klipper Host configuration
+
+- Klipper Host configuration
+- Creating a new file named /etc/network/interfaces.d/can0 with the following contents. A copy of this file is posted here in this repository
+```
+auto can0
+iface can0 can static
+    bitrate 250000
+    up ifconfig $IFACE txqueuelen 1024
+```
+ A copy of this file can be downlaoded [here](./can0). FRP this file to your Klipper host /home/pi directory and run this line from the ssh console to move it to the correct directory.
+```
+sudo cp /home/pi/can0 /etc/network/interfaces.d/
+```
 
 -CANBUS configuration
  -Finding the canbus_uuid for new micro-controllers¶

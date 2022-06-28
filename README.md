@@ -56,8 +56,38 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 ![burn complete](https://mellow.klipper.cn/images/boards/fly_sht36_42/7.png)
 
 - If the burn was sucessful remove the USB cable and the jumper from the Boot0 pin
- 
-### Pi configuration
+- The tool board is now ready to install as a klipper MCU. 
+**Repeat these steps if a klipper update requires flashing new firmware to the MCU. 
+
+### Link to CANBUS HAT or USB adapter configuration document will go here
+
+### Klipper Host configuration
+
+-CANBUS configuration
+ -Finding the canbus_uuid for new micro-controllers¶
+  Each micro-controller on the CAN bus is assigned a unique id based on the factory chip identifier encoded into each micro-controller. To find each micro-controller     device id, make sure the hardware is powered and wired correctly, and then run:
+
+
+```~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+  If uninitialized CAN devices are detected the above command will report lines like the following:
+
+
+```
+Found canbus_uuid=11aa22bb33cc
+```
+  Each device will have a unique identifier. In the above example, 11aa22bb33cc is the micro-controller's "canbus_uuid".
+
+   Note that the canbus_query.py tool will only report uninitialized devices - if Klipper (or a similar tool) configures the device then it will no longer appear in      the list.
+
+ -Configuring Klipper¶
+  Update the Klipper mcu configuration to use the CAN bus to communicate with the device - for example:
+
+```
+[mcu sht36]
+canbus_uuid: 11aa22bb33cc
+```
+
 
 ## Relevent links      
 ### Mellow tool board documentation      

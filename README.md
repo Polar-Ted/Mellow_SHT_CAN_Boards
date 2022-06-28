@@ -1,25 +1,26 @@
-This guide is intended to help you set up and configure the Mellow SHT-36 and SHT-42 CANbus tool boards.
+# HowTo for configuring the Mellow SHT-36 and SHT_42 CANBUS tool boards for Klipper. 
 
-***Relevent links***      
-Mellow tool board documentation      
+## Relevent links      
+### Mellow tool board documentation      
 https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5carjmy3#/board/fly_sht36_42/pins      
 
-Pin assignments      
+### Pin assignments      
 https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5carjmy3#/board/fly_sht36_42/pins      
 
-Mellow Schematics        
+### Mellow Schematics        
 https://github.com/Mellow-3D/Klipper-CAN-Toolboards      
 
-Klipper CANBUS Documentation     
+### Klipper CANBUS Documentation     
 https://www.klipper3d.org/CANBUS.html      
 
-This guide assumes you alreay have a working Klipper installation on a Rasberry Pi, other small board computer or linux based system. 
+### This guide assumes you alreay have a working Klipper installation on a Rasberry Pi, other small board computer or linux based system. 
 
-***Setup Steps***
+## Setup Steps***
 
-Compile Toolboard Firmware
+### Compile Toolboard Firmware
+![Menu Config](./images/makemenuconfig_screenshot.png)
 
-Burn Firmware to Tool Board
+### Burn Firmware to Tool Board
 
-Pi configuration
-[Menu Config](./images/makemenuconfig_screenshot.png)
+### Pi configuration
+

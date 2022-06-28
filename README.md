@@ -106,9 +106,13 @@ canbus_uuid: 11aa22bb33cc
  - more needed here for configuring Can bus network settings. 
 
 - USB Configuration
-(add lines for finding the lath)
+    - Run the following command at the Klipper host SSH console to get the serial path for the SHT board.
+```
+ls -l /dev/serial/by-id/
+```
+    - Note the ID containing 'stm32f072xb'
 
-Add the following lines to your printer.cfg file
+Add the following lines to your printer.cfg file replacing the USB ID with the one you copied in the last section. 
 ```
 [mcu sht36]
 serial: /dev/serial/by-id/usb-Klipper_stm32f072xb_240024001757425835303220-if00

@@ -74,11 +74,11 @@ iface can0 can static
 ```
 sudo cp /home/pi/can0 /etc/network/interfaces.d/
 ```
- -Waveshare RP485 CAN Hats will need further configuration - More on this section soon.       
+ - Waveshare RP485 CAN Hats will need further configuration - More on this section soon.       
     [Waveshare instructions](https://www.waveshare.com/wiki/RS485_CAN_HAT)      
 
--CANBUS configuration
- -Finding the canbus_uuid for new micro-controllers¶
+- Klipper CANBUS configuration
+ - Finding the canbus_uuid for new micro-controllers¶
   Each micro-controller on the CAN bus is assigned a unique id based on the factory chip identifier encoded into each micro-controller. To find each micro-controller     device id, make sure the hardware is powered and wired correctly, and then run:
 
 
@@ -95,7 +95,7 @@ Found canbus_uuid=11aa22bb33cc
 
    Note that the canbus_query.py tool will only report uninitialized devices - if Klipper (or a similar tool) configures the device then it will no longer appear in      the list.
 
- -Configuring Klipper¶
+ - Configuring Klipper¶
   Update the Klipper mcu configuration to use the CAN bus to communicate with the device - for example:
 
 Add the following lines to your printer.cfg file using your canbus_uuid
@@ -103,9 +103,9 @@ Add the following lines to your printer.cfg file using your canbus_uuid
 [mcu sht36]
 canbus_uuid: 11aa22bb33cc
 ```
- -more needed here for configuring Can bus network settings. 
+ - more needed here for configuring Can bus network settings. 
 
--USB Configuration
+- USB Configuration
 (add lines for finding the lath)
 
 Add the following lines to your printer.cfg file

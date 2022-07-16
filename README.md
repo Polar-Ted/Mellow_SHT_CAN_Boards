@@ -118,6 +118,10 @@ Add the following lines to your printer.cfg file replacing the USB ID with the o
 serial: /dev/serial/by-id/usb-Klipper_stm32f072xb_240024001757425835303220-if00
 ```
 
+Impoprtant: THe SHT-36 has 120 ohm jumpers. If you board is the last device on the CAN bus it needs to have the jumpers installed. 
+THe CANBUS needs to red 60 ohms across the L and H wires. 
+![120ohmjumpers](https://images-ext-2.discordapp.net/external/AhDBNpPmY22nRogGiSHUVf7SwN5Kett6VqNQmTyCJAs/https/ae01.alicdn.com/kf/S5f3ad70f268b49789afed9aa07f0cf78H.jpg?width=331&height=662)
+
 ## Relevent links      
 ### Mellow tool board documentation      
 https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5carjmy3#/board/fly_sht36_42/pins      

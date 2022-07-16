@@ -133,6 +133,9 @@ https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5carjmy3#/board/fly
 ### Mellow Schematics        
 https://github.com/Mellow-3D/Klipper-CAN-Toolboards      
 
+### Mellow CAN Advanced Settings
+https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5cQK0pdg#/advanced/can
+
 ### Klipper CANBUS Documentation     
 https://www.klipper3d.org/CANBUS.html      
 

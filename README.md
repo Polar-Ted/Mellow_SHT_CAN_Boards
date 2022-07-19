@@ -141,6 +141,9 @@ https://github.com/Mellow-3D/Klipper-CAN-Toolboards
 ### Mellow CAN Advanced Settings
 https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5cQK0pdg#/advanced/can
 
+### Mellow CANBoot setup
+https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5cQK0pdg#/advanced/canboot
+
 ### Klipper CANBUS Documentation     
 https://www.klipper3d.org/CANBUS.html      
 
@@ -152,4 +155,8 @@ https://klipper.discourse.group/t/experimental-usb-to-canbus-bridge-mode/3136
 
 ### Maz0r CanBus troubleshooting
 https://maz0r.github.io/klipper_canbus/controller/candlelight_fw.html#httpscanableioupdater
+
+### CANBoot by Arksine
+https://github.com/Arksine/CanBoot
+
 

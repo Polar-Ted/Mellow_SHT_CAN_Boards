@@ -124,7 +124,7 @@ THe CANBUS needs to red 60 ohms across the L and H wires.
 ![120ohmjumpers](https://images-ext-2.discordapp.net/external/AhDBNpPmY22nRogGiSHUVf7SwN5Kett6VqNQmTyCJAs/https/ae01.alicdn.com/kf/S5f3ad70f268b49789afed9aa07f0cf78H.jpg?width=331&height=662)
 
 ### Flashing UTOC if needed.. Not required
-Upload the utoc_firmware.bon file to a folder on your Pi.      
+Upload the utoc_firmware.bin file to a folder on your Pi.      
 install the DFU mode Jumper           
 ![UTOC DFU Jumper](./images/UTOC_DFU_Jumper.jpg)
 Connect the UTOC by USB to the Pi      

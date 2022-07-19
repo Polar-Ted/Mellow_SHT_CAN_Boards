@@ -125,6 +125,7 @@ THe CANBUS needs to red 60 ohms across the L and H wires.
 
 ### Flashing UTOC
 ```sudo dfu-util --dfuse-address -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ~/CanBoot//utoc/utoc_firmware.bin```      
+[Mellow UTOC firmware](./firmware/UTOC/utoc_firmware.bin)
 Note to self: Add notes on jumpers and file location
 
 

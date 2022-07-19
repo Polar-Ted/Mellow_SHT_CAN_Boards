@@ -123,6 +123,11 @@ THe CANBUS needs to red 60 ohms across the L and H wires.
 
 ![120ohmjumpers](https://images-ext-2.discordapp.net/external/AhDBNpPmY22nRogGiSHUVf7SwN5Kett6VqNQmTyCJAs/https/ae01.alicdn.com/kf/S5f3ad70f268b49789afed9aa07f0cf78H.jpg?width=331&height=662)
 
+**Flashing UTOC**
+```sudo dfu-util --dfuse-address -d 0483:df11 -c 1 -i 0 -a 0 -s 0x08000000 -D ~/CanBoot//utoc/utoc_firmware.bin```
+Add notes on jumpers and file location
+
+
 ## Relevent links      
 ### Mellow tool board documentation      
 https://mellow.klipper.cn/?spm=a2g0o.detail.1000023.17.566a6b5carjmy3#/board/fly_sht36_42/pins      
@@ -144,4 +149,7 @@ https://www.waveshare.com/wiki/RS485_CAN_HAT
 
 ### Kevin O'Conner Experemental USB to CANBUS bride mode discussion. _ Recently merged into the main Klipper branch. Allows using compatible MCUs like the Octopus as your CANBUS node for the Klipper host. No USB CAN Interface or Pi HAT needed. 
 https://klipper.discourse.group/t/experimental-usb-to-canbus-bridge-mode/3136
+
+### Maz0r CanBus troubleshooting
+https://maz0r.github.io/klipper_canbus/controller/candlelight_fw.html#httpscanableioupdater
 
